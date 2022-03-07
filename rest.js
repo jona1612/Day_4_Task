@@ -7,9 +7,9 @@ request.onload=function(){
     if (request.status==200){
         let con= JSON.parse(request.responseText)
         con.map((c) => {
-            console.log("NAME - "+c.name.official)
+            console.log("COUNTRY NAME - "+c.name.official)
             console.log("REGION - "+c.region)
-            console.log('SUBREGION - '+c.subregion)
+            console.log('SUB REGION - '+c.subregion)
             console.log("POPULATION - "+c.population)
         });
         }
